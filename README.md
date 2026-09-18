@@ -1,21 +1,32 @@
-# Computer Vision Based Automated Face Attendance System
+# 👁️ Smart Automated Face Attendance System (Computer Vision)
 
-## Overview
-A real-time Computer Vision system designed in Python and OpenCV. It captures frames from live webcam devices, isolates face regions using multi-scale object detection classifiers, and updates student attendance records into a structured CSV file automatically.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Data Integrity](https://img.shields.io/badge/Database-CSV%20Logging-green?style=for-the-badge)
 
-## Features
-- Real-time webcam processing pipeline.
-- Facial region detection using OpenCV Haar Cascade Classifiers.
-- Automatic attendance log generation (`attendance.csv`).
-- Built-in duplicate entry protection per calendar date.
+🚀 **Overview**
 
-## Technologies Used
-- **Language:** Python 3.x
-- **Computer Vision Framework:** OpenCV (`cv2`)
-- **Data & System Utilities:** NumPy, Datetime, CSV, OS
+This project is a high-performance **Computer Vision application** built to automate attendance tracking using real-time face detection and spatial pattern recognition. It replaces slow, error-prone manual roll calls with an automated vision processing pipeline, logging timestamped entries to a persistent storage system while preventing duplicate logging.
 
-## Installation & Setup
-1. Clone repository:
-   ```bash
-   git clone [https://github.com/devpatelgeek/Smart-Face-Attendance-CV.git](https://github.com/devpatelgeek/Smart-Face-Attendance-CV.git)
-   cd Smart-Face-Attendance-CV
+---
+
+## ✨ Key Features
+
+- 📹 **Real-Time Video Stream Pipeline:** Processes live frames from hardware capture devices cleanly.
+- 🎯 **Multi-Scale Spatial Detection:** Utilizes spatial feature extraction for human face detection.
+- ⚡ **Automated Log Prevention:** Smart duplicate entry detection per calendar date.
+- 📂 **Persistent Audit Backend:** Automatic logging to structured CSV flat-file databases.
+- 🧱 **Modular Architecture:** Clean separation of vision capture logic and database persistence.
+
+---
+
+## 🏗️ Project Structure
+
+```text
+Smart-Face-Attendance-CV/
+│
+├── main.py              # Main execution script & vision pipeline simulation
+├── attendance.csv       # Persistent timestamped database log
+├── statement.md         # Detailed Problem Statement & Project Scope
+├── requirements.txt     # System dependency management file
+└── README.md            # Comprehensive project documentation
